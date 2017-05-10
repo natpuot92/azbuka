@@ -587,3 +587,81 @@ color: #333333;
   }
 }
 
+.top-line {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  min-height: 72px;
+  background: linear-gradient(93deg, #80bb3d, #6de373);
+}
+
+.top-line__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 72px;
+  padding-left: 63px;
+}
+
+.top-line__logo {
+  width: 54.7px;
+  height: 40.7px;
+  margin-right: 62.3px;
+  margin-top: 6px;
+  background: url('../img/azbuka.svg');
+}
+
+.top-line__container-1 {
+  display: flex;
+
+}
+
+.top-line__desc-hellow {
+  opacity: 0.5;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #ffffff;
+}
+
+.top-line__desc-name {
+  font-size: 30px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.top-line__btn {
+  font-size: 17px;
+  line-height: 1.41;
+  color: #333333;
+  padding: 8px 42px 10px;
+  background: white;
+  border-radius: 100px;
+  box-shadow: 0 0 14px 0 rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+  .sticky {
+    transform: translateY(0);
+  }
+
+
+
+@media (max-width: 768px) {
+  .sticky-header {
+    display: none;
+  }
+}
